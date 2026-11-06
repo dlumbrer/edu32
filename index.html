@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171326">
+  <title>Edu 32 · La ruleta del cumple</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><span class="brand">EDU<span>32</span></span><span class="pill">EDICIÓN CUMPLEAÑOS ✦</span></header>
+  <main>
+    <section id="home-screen" class="home" aria-labelledby="home-heading">
+      <p class="eyebrow">HOY SE CELEBRA A EDU</p>
+      <h1 id="home-heading" tabindex="-1">32 años.<br><span>Y lo que nos queda.</span></h1>
+      <p class="intro">Una ruleta, unas cuantas fotos comprometidas y muchas ganas de liarla juntos.</p>
+      <div class="birthday" aria-hidden="true">32<span>✦</span></div>
+      <button id="start" class="primary">Empezar la fiesta ↗</button>
+      <p class="how-to">Gira, descubre qué Edu te toca y lee la prueba.<br>Después, pasa el móvil al siguiente.</p>
+      <p class="care-note">Beber es opcional, con o sin alcohol. Si una prueba no te apetece, pasa. Aquí venimos a reírnos.</p>
+    </section>
+    <section id="roulette-screen" class="panel" aria-label="Ruleta" hidden>
+      <h2 class="screen-title">A ver qué Edu te toca.</h2>
+      <div class="wheel-wrap">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="wheel" id="wheel" aria-hidden="true"><div id="wheel-labels"></div></div>
+        <button id="wheel-center" class="wheel-center" aria-label="Edu 32"><span>EDU</span><strong>32</strong></button>
+      </div>
+      <button id="spin" class="primary" disabled>Cargando…</button>
+      <button id="gallery-open" class="text-button" hidden>Mira todas las fotos</button>
+    </section>
+    <section id="result-screen" class="panel" aria-labelledby="result-heading" hidden>
+      <figure class="photo-wrap"><img id="edu-photo" alt=""><p id="photo-error" hidden>Foto no disponible</p><figcaption id="photo-caption" class="photo-caption"></figcaption></figure>
+      <h2 id="result-heading" tabindex="-1"></h2>
+      <p id="challenge-text"></p>
+      <button id="pass" class="primary">Pasa el móvil →</button>
+    </section>
+    <section id="gallery-screen" aria-labelledby="gallery-heading" hidden>
+      <h2 id="gallery-heading" tabindex="-1">Edu, en todas sus versiones.</h2>
+      <div id="gallery" class="gallery"></div>
+      <button id="gallery-back" class="primary">Volver a la ruleta</button>
+    </section>
+    <p id="status" class="sr-only" role="status"></p>
+    <button id="retry" class="text-button" hidden>Reintentar</button>
+    <button id="home" class="text-button" hidden>← Volver al inicio</button>
+    <noscript><p>Activa JavaScript para jugar. También puedes leer <a href="pruebas.txt">las pruebas</a>.</p></noscript>
+  </main>
+  <footer>Para Edu, con cariño y demasiadas fotos. <span>♥</span><br>Por estos 32 y por todos los que vienen.</footer>
+</body>
+</html>
