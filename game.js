@@ -3,7 +3,7 @@
   'use strict';
   const photos = [
     ['Edu_motero_a_3_metros_sobre_el_cielo.jpeg', 'Edu motero', 'A tres metros sobre el suelo. A dos del ibuprofeno.'],
-    ['Edu_bacala.jpeg', 'Edu bacala', '32 años de dropping… y de croquetas.'],
+    ['Edu_bacala.jpeg', 'Edu bacala', '32 años y todavía en plena edad del pavo.'],
     ['Edu_teeneager_seductor.jpeg', 'Edu teenager seductor', 'Teenager de espíritu. De rodillas, no tanto.'],
     ['Edu_pezon_caliente.jpeg', 'Edu pezón caliente', 'La calefacción central del grupo.'],
     ['Edu_sapo.jpeg', 'Edu sapo', 'Bésalo y se convierte en un señor de 32.'],
